@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Coracao } from './../shared/coracao.model';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-tentativas',
@@ -6,12 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tentativas.component.css']
 })
 
-export class TentativasComponent implements OnInit {
+export class TentativasComponent implements OnInit, OnChanges {
 
-  public coracaoVazio  = '../../assets/coracao_vazio.png';
-  public coracaoCheio = '../../assets/coracao_cheio.png';
+  @Input() public tentativas: number;
 
-  constructor() { }
+  public coracoes = [
+    new Coracao(true),
+    new Coracao(true),
+    new Coracao(true)
+  ];
+
+  constructor() {}
+
+  ngOnChanges(changes: import('@angular/core').SimpleChanges): void {
+    if (this.tentativas !== this.coracoes.length) {
+      const indice = this.coracoes.length - this.tentativas;
+      for (let i = 0; i < indice;  i++) {
+        this.coracoes[i].cheio = false;
+      }
+
+    }
+  }
 
   ngOnInit(): void {
   }
