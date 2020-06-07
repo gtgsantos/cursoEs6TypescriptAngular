@@ -43,8 +43,7 @@ export class PainelComponent implements OnInit {
   private verificarRespostaSeRespostaDiferenteFrase() {
     this.tentativas--;
     if (this.tentativas === -1) {
-      this.encerrarJogoEvent.emit('derrota');
-      this.destruirPainelSucessoErro();
+      this.destruirPainelSucessoErro('derrota');
     }
   }
 
@@ -52,8 +51,7 @@ export class PainelComponent implements OnInit {
     this.rodada++;
     this.progresso = this.progresso + (100 / this.frases.length);
     if (this.rodada === this.frases.length) {
-      this.encerrarJogoEvent.emit('vitoria');
-      this.destruirPainelSucessoErro();
+      this.destruirPainelSucessoErro('vitoria');
     }
     else {
       this.defineFrase();
@@ -61,8 +59,8 @@ export class PainelComponent implements OnInit {
     this.resposta = '';
   }
 
-  private destruirPainelSucessoErro() {
-    console.log('fecharPainelSucessoPerda');
+  private destruirPainelSucessoErro(evento: string) {
+    this.encerrarJogoEvent.emit(evento);
   }
 
   private defineFrase() {
