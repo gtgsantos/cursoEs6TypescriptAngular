@@ -43,7 +43,7 @@ export class PainelComponent implements OnInit {
   private verificarRespostaSeRespostaDiferenteFrase() {
     this.tentativas--;
     if (this.tentativas === -1) {
-      this.encerrarJogoEvent.emit('derrota')
+      this.encerrarJogoEvent.emit('derrota');
       this.destruirPainelSucessoErro();
     }
   }

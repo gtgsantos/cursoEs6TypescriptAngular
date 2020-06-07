@@ -5,19 +5,19 @@
 </div>
 
 <ng-template #fimDeJogo>
-    <div *ngIf="derrota; else divVitoria" class="container" style="margin-top: 50px;">
+    <div *ngIf="tipoEncerramento === 'derrota'; else divVitoria" class="container" style="margin-top: 50px;">
         <div class="row">
             <div class="col">
                 <h3 style="color: red">Fim de Jogo, você perdeu.</h3>
+                <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
             </div>
         </div>
     </div>
     <ng-template #divVitoria> 
-        <div class="row"  class="container" style="margin-top: 50px;">
+        <div class="row" class="container" style="margin-top: 50px;">
             <div class="col">
-                <h3 style="color: blue">
-                    Parabéns, você ganhou!
-                </h3>
+                <h3 style="color: blue">Parabéns, você ganhou!</h3>
+                <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
             </div>
         </div>
     </ng-template>
