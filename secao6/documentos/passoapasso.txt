@@ -1,9 +1,0 @@
-1. rodei o comando 'ng new app1'
-2. rodei o comando 'ng serve'
-
-
-3. rodei o comando 'ng generate component painel' para criar um componente chamado painel dentro do projeto
-
-4. rodei o comando 'ng g c tentativas', é basicamente igual ao comando de cima, porém menos verboso
-
-5. rodei o comando 'ng g c progresso --spec=false' que é basicamente o mesmo comando de cima, porém o --skip-tests diz para não gerar o arquivo de teste "spec"
