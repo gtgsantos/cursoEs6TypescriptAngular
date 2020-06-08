@@ -10,3 +10,6 @@
 
 
 6. rodei o comando 'ng build' para fazer a build da aplicação no ambiente de desenvolvimento.
+
+
+obs: caso o projeto seja baixado novamente, antes ed rodar o 'ng serve', é necessario baixar as dependencias novamente com o comando 'npm install'
