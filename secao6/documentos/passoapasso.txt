@@ -10,6 +10,12 @@
 
 
 6. rodei o comando 'ng build' para fazer a build da aplicação no ambiente de desenvolvimento.
-
+(se for colocado --dev depois, ele faz a build de desenvolvimento, e se for colocado --prod, ele faz a build de producao)
 
 obs: caso o projeto seja baixado novamente, antes ed rodar o 'ng serve', é necessario baixar as dependencias novamente com o comando 'npm install'
+
+
+
+7. instalei o http-server para fazer testes da aplicação 'deployada'. Para instalar, basta digitar o seguinte comando:
+'npm install http-server -g'
+

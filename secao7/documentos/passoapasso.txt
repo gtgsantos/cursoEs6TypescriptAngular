@@ -1,0 +1,17 @@
+1. rodei o comando 'ng new app2'
+
+2. rodei o comando 'npm install'
+
+
+3. rodei o comando 'npm intall bootstrap --save'
+
+4. rodei o comando  'npm install jquery --save'
+
+5. rodei o comando  'npm install tether --save'
+
+6. rodei o comando  'ng g c topo'
+
+7. rodei o comando  'ng g c home'
+
+8. rodei o comando  'ng g c rodape'
+
