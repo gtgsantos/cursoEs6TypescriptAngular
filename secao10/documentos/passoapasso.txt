@@ -17,3 +17,9 @@
 9. instalei o json-server "npm install -g json-server" pra simular uma api Rest
 
 10. rodei ela a partir da pasta /secao9 com o comando "json-server --watch banco_de_dados.json"
+
+11. instalar o pacote http "npm install @angular/http -g", pois ele é deprecated na versao 9 do angular, e o exemplo usa ele pra pegar as requisicoes http
+
+12. rodei o comando  'ng g c restaurantes'
+
+13. rodei o comando  'ng g c diversao'
