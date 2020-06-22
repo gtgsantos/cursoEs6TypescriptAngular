@@ -12,10 +12,10 @@
     <div class="container">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active"  routerLink="/restaurantes">Restaurantes</a> <!--1a forma de se referenciar uma rota -->
+          <a class="nav-link " routerLinkActive="active" routerLink="/restaurantes">Restaurantes</a> <!--1a forma de se referenciar uma rota -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/diversao']">Diversão</a> <!--2a forma de se referenciar uma rota -->
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/diversao']">Diversão</a> <!--2a forma de se referenciar uma rota -->
         </li>
       </ul>
     </div>

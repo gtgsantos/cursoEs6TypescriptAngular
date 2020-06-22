@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { AbstractDisplayComponent } from '../shared/abstract.display.component';
+import { Component } from '@angular/core';
+import { OfertasService } from '../ofertas.service';
 
 @Component({
-  selector: 'app-restaurantes',
-  templateUrl: './restaurantes.component.html',
-  styleUrls: ['./restaurantes.component.css']
+  selector: 'app-restaurante',
+  templateUrl: '../shared/abstract.display.component.html',
+  styleUrls: ['../shared/abstract.display.component.css'],
+  providers: [ OfertasService ]
 })
-export class RestaurantesComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
-
+export class RestaurantesComponent extends AbstractDisplayComponent {
+  public categoria = 'restaurante';
+  public titulo = 'Rodízios, Buffet, Carnes Especiais, Feijoada e mais!';
+  public subtitulo = 'Conheça as melhores ofertas de restaurantes:';
 }

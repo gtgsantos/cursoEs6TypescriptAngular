@@ -23,3 +23,5 @@
 12. rodei o comando  'ng g c restaurantes'
 
 13. rodei o comando  'ng g c diversao'
+
+14. rodei o comando 'ng g c oferta'
