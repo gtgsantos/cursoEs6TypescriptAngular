@@ -1,0 +1,35 @@
+1. rodei o comando 'ng new app1 --prefix xyz'
+2. rodei o comando 'npm install'
+
+
+3. rodei o comando 'npm intall bootstrap --save'
+
+4. rodei o comando  'npm install jquery --save'
+
+5. rodei o comando  'npm install tether --save'
+
+6. rodei o comando  'ng g c topo'
+
+7. rodei o comando  'ng g c home'
+
+8. rodei o comando  'ng g c rodape'
+
+9. instalei o json-server "npm install -g json-server" pra simular uma api Rest
+
+10. rodei ela a partir da pasta /secao9 com o comando "json-server --watch banco_de_dados.json"
+
+11. instalar o pacote http "npm install @angular/http -g", pois ele é deprecated na versao 9 do angular, e o exemplo usa ele pra pegar as requisicoes http
+
+12. rodei o comando  'ng g c restaurantes'
+
+13. rodei o comando  'ng g c diversao'
+
+14. rodei o comando 'ng g c oferta'
+
+14. rodei o comando 'ng g c oferta/comoUsar'
+
+14. rodei o comando 'ng g c oferta/ondeFica'
+
+15. atualiza o arquivo banco_de_dados.json com os dados do 'como usar'
+
+16. atualiza o arquivo banco_de_dados.json com os dados do 'onde fica'
