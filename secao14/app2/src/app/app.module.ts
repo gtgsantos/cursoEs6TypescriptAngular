@@ -3,7 +3,8 @@ import { ROUTES } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-//import { HttpClientModule } from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
+//import { HttpClient Module } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +18,7 @@ import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
 import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     //HttpClientModule TODO ver depois como isso é implementado (esta versao de cima esta deprecated)
     RouterModule.forRoot(ROUTES)
   ],
